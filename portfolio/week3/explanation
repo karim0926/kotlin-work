@@ -1,0 +1,10 @@
+### Explanation of the four additional median tests
+
+I added four tests to check that `median()` works correctly for lists containing one, two, three, and four elements.
+
+1. **One element:** I used `[7.0]` and expected a median of `7.0`. This checks that a single-element list returns its only value.
+2. **Two elements:** I used `[2.0, 8.0]` and expected a median of `5.0`. This checks that the function calculates the average of the two middle values for an even-sized list.
+3. **Three elements:** I used `[2.0, 10.0, 4.0]` and expected a median of `4.0`. This checks that the function sorts the values and returns the middle value for an odd-sized list.
+4. **Four elements:** I used `[1.0, 9.0, 3.0, 7.0]` and expected a median of `5.0`. This checks that the function handles an even-sized, unsorted list by sorting the values and averaging the two middle values.
+
+Together with the existing empty-list test, these tests cover lists of sizes zero through four. All five tests passed.
